@@ -14,7 +14,7 @@
   </head>
   <body>
     <form id="demo-form" action="write your redirect" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LdWuoolAAAAAG70L70P4bJA6RxLYMbwG8O8C8Rh"></div>
+      <div class="g-recaptcha" data-sitekey="client-id"></div>
         <input type="submit" value="Submit">
       <br/>
     </form>
