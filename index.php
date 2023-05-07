@@ -1,3 +1,7 @@
+<?php 
+// created_by : mohamed sebai 
+?>
+
 <html>
   <head>
     <title>reCAPTCHA demo: Simple page</title>
