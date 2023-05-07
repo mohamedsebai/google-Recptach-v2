@@ -1,9 +1,10 @@
 <?php
 /*
- * captcha with phpmaster account
+
+ created_by : mohamed sebai 
+
 */
-// client side: 6LcbtYolAAAAAPW75kKrbV73KoUdFOu9mATpCNBC
-// server side : 6LcbtYolAAAAAIKcVx0-ed8AwN3jaQzJwYF20j9k
+
 if($_SERVER['REQUEST_METHOD']=="POST"){
   if(isset($_POST['g-recaptcha-response'])){
       $recaptcha = $_POST['g-recaptcha-response'];
@@ -13,7 +14,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             die();
           }else{
 
-            $secret = '6LdWuoolAAAAACli9LlH_n7VILEuatD8IgLHvZ_6';
+            $secret = 'server-id';
             $url = "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$recaptcha}";
             $response = file_get_contents($url);
             $responseKeys = json_encode($response, true); // return array //print_r($responseKeys);
